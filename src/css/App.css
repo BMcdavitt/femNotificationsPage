@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "PlusJakartaSansExtraBold";
+  src: url("../fonts/static/PlusJakartaSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url("../fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+@media (min-width: 750px) {
+  body {
+    background-color: hsl(211deg, 68%, 94%);
+    align-items: center;
+  }
+}
+
+main {
+  font-family: "PlusJakartaSans";
+  color: hsl(224deg, 21%, 14%);
+  max-width: 45.625rem;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1.25rem;
+  padding: 1rem;
+}
+main header {
+  margin: 0 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main header .notifictions {
+  font-family: "PlusJakartaSansExtraBold";
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+  display: flex;
+}
+main header .notifictions .notificaitonCounter {
+  background-color: hsl(219deg, 85%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  width: 2.0625rem;
+  height: 1.5625rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 1.125rem;
+}
+main header .actions {
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+main header .actions:hover {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: 600;
+}
+main .notifList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+  margin: 0 1rem;
+}
+main .notifList .NotificationCard {
+  color: hsl(219deg, 12%, 42%);
+  display: flex;
+  gap: 0.875rem;
+  padding: 1rem;
+  border-radius: 0.625rem;
+}
+main .notifList .NotificationCard .NotificatoinAvatar {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+main .notifList .NotificationCard .NotificationDetails .NotificationString .memberName {
+  color: hsl(224deg, 21%, 14%);
+  font-weight: 600;
+  padding-right: 0.1563rem;
+}
+main .notifList .NotificationCard .NotificationDetails .NotificationString .link {
+  color: hsl(219deg, 12%, 42%);
+  font-weight: 600;
+  padding-left: 0.1563rem;
+  cursor: pointer;
+}
+main .notifList .NotificationCard .NotificationDetails .NotificationString .link:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+main .notifList .NotificationCard .NotificationDetails .NotificationString .group {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: 600;
+  padding-left: 0.1563rem;
+  cursor: pointer;
+}
+main .notifList .NotificationCard .NotificationDetails .NotificationString .group:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+main .notifList .NotificationCard .NotificationDetails .NotificationString .NotificationTime {
+  color: hsl(211deg, 68%, 94%);
+}
+main .notifList .NotificationCard .NotificationDetails .NotificationString .NotificationAlert {
+  color: hsl(1deg, 90%, 64%);
+  font-size: 0.625rem;
+  vertical-align: middle;
+  padding-left: 0.3125rem;
+}
+main .notifList .NotificationCard .NotificationDetails .NotificationMessage {
+  border: 0.0625rem solid hsl(219deg, 12%, 42%);
+  border-radius: 0.3125rem;
+  margin-top: 0.75rem;
+  cursor: pointer;
+  padding: 1.1875rem 1rem;
+}
+main .notifList .NotificationCard .NotificationDetails .NotificationMessage:hover {
+  background-color: hsl(205deg, 33%, 90%);
+}
+main .notifList .NotificationCard .NotificationPhotoThumbnail {
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  border: 0.1875rem solid transparent;
+  border-radius: 0.625rem;
+}
+main .notifList .NotificationCard .NotificationPhotoThumbnail:hover {
+  border-color: hsl(219deg, 14%, 63%);
+}
+main .notifList .NotificationCardNew {
+  background-color: hsl(211deg, 68%, 94%);
+  cursor: pointer;
+}
